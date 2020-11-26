@@ -4,28 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@200;300;400&display=swap"
+        rel="stylesheet">
     <title>Jade Emperror</title>
-    <link rel="stylesheet" href="/css/index.css">
 </head>
 
 <body>
-    <div id="head" class="head">
-        <a class="opt">About ME</a>
-        <a class="opt">Projects</a>
-        <a class="opt">Products</a>
-        <a class="opt">Contact Me</a>
-    </div>
-    <div id="me" class="me">
-        <div class="abtcont">
-            <div class="abttxtcont">
-                <div class="header">
-                    <div class="hdrcont">
-                        <h1 id="name">Bharath Kumar G</h1>
-                        <h4 id="occu">Technologist</h4>
+    <header>
+        <ul class="navlinks">
+            <a class="navlink flink" href="#">About ME</a>
+            <a class="navlink" href="#">Projects</a>
+            <a class="navlink" href="#">Products</a>
+            <a class="navlink" id="contact" href="#">Contact ME</a>
+        </ul>
+    </header>
+    <main>
+        <section class="resume">
+            <div class="abt-cont">
+                <div class="abt-txt">
+                    <div class="abt-hdr">
+                        <h1 class="abt-name">Bharath Kumar G</h1>
+                        <h4 class="abt-role">Technologist</h4>
                     </div>
-                </div>
-                <div class="paracont">
-                    <div class="para">
+                    <div class="abt-me">
                         <ul>
                             <li>B.Tech in Information Technology.</li>
                             <li>Ability to work with Python,C++,Java.</li>
@@ -35,19 +38,14 @@
                         </ul>
                     </div>
                 </div>
+                <div class="abt-pic" onclick="throwresume()">
+                    <img class="pic" src="/rcs/reume01.jpg" alt="resume">
+                    <button class="dl-resume">Resume</button>
+                </div>
             </div>
-            <div class="imgcont">
-                <img src="rcs/prof1x1.jpg" alt="My Pic" id="prof" class="prof">
-            </div>
-        </div>
-    </div>
-    <div class="product">
-        <div class="hdr">
-            <h2>Products</h2>
-        </div>
-    </div>
-
+        </section>
+        
+    </main>
+    <script src="/js/index.js"></script>
 </body>
-<script src="js/index.js"></script>
-
 </html>

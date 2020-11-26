@@ -1,5 +1,3 @@
-function rolloutabout(){
-    var me = document.getElementById('me');
-    me.style.right="0px";
+function throwresume(){
+    document.location.href="/rcs/resume.pdf";
 }
-setTimeout(rolloutabout(), 2000);
