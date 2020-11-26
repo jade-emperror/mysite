@@ -3,6 +3,7 @@
   padding: 0;
   font-family: 'Poppins', sans-serif;;
 }
+/* navlink part starts */
 header{
   display: flex;
   background: black;
@@ -24,6 +25,7 @@ header{
   color:rgb(255, 58, 58);
   transition: 0.1s;
 }
+/* navlink ends here + about starts here*/
 .resume{
   background-image: linear-gradient(to bottom right,rgba(171, 171, 209, 0.8),rgb(190, 190, 226),rgb(201, 201, 238),rgb(235, 235, 235),rgba(205, 205, 241, 0.7),rgb(154, 154, 207));  
 }
@@ -76,6 +78,123 @@ display: none;
   transition: .2s;
   cursor: pointer;
 }
+/*about ends + projects start*/
+.projects{
+  margin-top: 10vh;
+}
+.projects-cont{
+  width: 90%;
+  margin:auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.projects-header{
+  color: rgb(224, 47, 47);
+  font-size: 1.5rem;
+  letter-spacing: .8rem;
+  border-bottom: 2px solid;
+  width: 18rem;
+}
+.proj-cont{
+  width: 88%;
+  margin:auto;
+  padding-top: 5%;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 5%;
+}
+.proj-cont-rr{
+  width: 88%;
+  margin:auto;
+  padding-top: 5%;
+  display: flex;
+  flex-direction: row-reverse;
+  padding-bottom: 5%;
+}
+
+.proj-txt{
+   width: 60%;
+}
+.proj-txt-rr{
+  width: 60%;
+  margin-left: 10rem;
+}
+.proj-title{
+  color: black;
+  letter-spacing: .3rem;
+  font-size: 1.7rem;
+}
+.desc-txt{
+  margin-left: 20px;
+}
+.desc-p{
+  margin-top: 10px;
+  letter-spacing: .15rem;
+  font-size: 1.15rem;
+  text-indent: 50px;
+}
+.desc-techstack{
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+.tech-header{
+  margin-right: 10px;
+}
+.tech-used{
+  letter-spacing: .12rem;
+}
+.desc-img{
+  width: 40%;
+}
+.proj-img{
+  width: 27rem;
+  margin-left: 50px;
+  margin-top: -50px;
+}
+.proj-img-rr{
+  width: 27rem;
+  margin-left: 30px;
+  margin-top: -50px;
+}
+.desc-btns{
+  margin-top: 30px;
+ display: flex;
+ justify-content: center; 
+}
+.desc-btns button{
+  margin-left: 20px;
+  padding: .8rem 3rem;
+  font-size: 1.3rem;
+}
+.desc-btns button:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: .1s;
+}
+.git{
+  border: 4px solid black;  
+  background: transparent;
+  display: flex;
+}
+.git-btn-logo{
+  margin-left: -10px;
+  margin-right: 10px;
+}
+.pro-contact{
+  border: none;
+  color: white;
+  background:black;
+}
+.hlink{
+  color: blue;
+  text-decoration: underline;
+}
+.hlink:hover{
+  cursor: pointer;
+}
+/*animations below*/
 @keyframes bounce{
   0%{
     opacity:.6;
@@ -94,7 +213,11 @@ display: none;
     transform: translateY(0px);
   }
 }
+/*mob screen here */
 @media screen and (max-width:1024px){
+  html,body{
+    overflow-x: hidden;
+  }
   header{
     display: flex;
     background: black;
@@ -173,5 +296,54 @@ display: none;
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+  .projects{
+    margin-top: 5vh;
+  }
+  .projects-cont{
+    width: 100%;
+    display: flex;
+  }
+  .projects-header{
+    color: rgb(224, 47, 47);
+    font-size: 1rem;
+    margin-left: 5%;
+    letter-spacing: 0.5rem;
+  }
+  .proj-cont,.proj-cont-rr{
+    padding-top: 5%;
+    display: flex;
+    padding-bottom: 15%;
+    flex-direction: column-reverse;
+  }
+  .proj-txt,.proj-txt-rr{
+    margin-top: 2rem;
+    width: 100%;
+    margin-left: 0px;
+  }
+  .desc-txt{
+    margin-left:0px;
+    viewport-fit: cover;
+    text-align: justify;
+  }
+  .desc-techstack{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    size: cover;
+  }
+  .proj-img,.proj-img-rr{
+    justify-content: center;
+    margin-top: 7%;
+    width: 190%;
+  }
+  .git{
+    margin-left: 0px;
+  }
+  .desc-btns button{
+    padding: 10px 20px;
+  }
+  .hlink{
+    font-size: .8rem;
   }
 }
