@@ -79,17 +79,17 @@ display: none;
   cursor: pointer;
 }
 /*about ends + projects start*/
-.projects{
+.projects,.service{
   margin-top: 10vh;
 }
-.projects-cont{
+.projects-cont,.service-cont{
   width: 90%;
   margin:auto;
   display: flex;
   flex-direction: column;
 }
 
-.projects-header{
+.projects-header,.service-header{
   color: rgb(224, 47, 47);
   font-size: 1.5rem;
   letter-spacing: .8rem;
@@ -193,6 +193,51 @@ display: none;
 }
 .hlink:hover{
   cursor: pointer;
+}
+/*projects ends here and services starts here */
+.service-desc{
+  display: flex;
+  flex-direction: column;
+}
+.service-desc-list{
+  padding: 3% 0%;
+  margin: auto;
+  font-size: 1.8rem;
+  letter-spacing: .3rem;
+}
+.service-list{
+  padding-top: 10px;
+}
+.disclamier{
+  font-size: .9rem;
+  padding-bottom: 3%;
+}
+.disclamier-head{
+  color: rgb(235, 84, 84);
+}
+.disclamier-desc{
+  color: grey;
+}
+.knowme{
+  padding-top: 30px;
+  display: flex;padding-bottom: 200px;
+  align-items: center;
+  flex-direction: column;
+}
+.knowme-header{
+  padding-bottom: 10px;
+  font-size: 2rem;
+}
+.socialicons{
+  width: 4rem;
+  padding-left: 1rem;
+  -webkit-box-reflect: below .2rem -webkit-gradient(linear, right top, right bottom, from(transparent), to(rgba(255, 255, 255, 0.2)));
+}
+.socialicons:hover{
+  transform: scale(1.3);
+  cursor: pointer;
+  -webkit-box-reflect: below .1rem -webkit-gradient(linear, right top, right bottom, from(transparent), to(rgba(255, 255, 255, 0.4)));
+  transition: .15s;
 }
 /*animations below*/
 @keyframes bounce{
@@ -345,5 +390,29 @@ display: none;
   }
   .hlink{
     font-size: .8rem;
+  }
+  .service-desc-list{
+    width: 90%;
+    margin: auto;
+    padding: 7% 0% 7% 0%;
+  }
+  .service-list{
+    font-size: 1rem;
+  }
+  .disclamier-head{
+    font-size: 1rem;
+  }
+  .disclamier-desc{
+    font-size: .7rem;
+  }
+  .socialicons{
+    width: 3rem;
+    padding-left: .2rem;
+    -webkit-box-reflect: below .2rem -webkit-gradient(linear, right top, right bottom, from(transparent), to(rgba(255, 255, 255, 0.2)));
+  }
+  .socialicons:focus{
+    transform: scale(1.2);
+    -webkit-box-reflect: below .1rem -webkit-gradient(linear, right top, right bottom, from(transparent), to(rgba(255, 255, 255, 0.4)));
+    transition: .15s;
   }
 }
