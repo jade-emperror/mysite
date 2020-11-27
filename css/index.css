@@ -10,6 +10,9 @@ header{
   height: 10vh;
   align-items: center;
 }
+button:focus{
+  outline: none;
+}
 .navlinks{
   display: flex;
   text-decoration: none;
@@ -27,10 +30,21 @@ header{
 }
 /* navlink ends here + about starts here*/
 .resume{
-  background-image: linear-gradient(to bottom right,rgba(171, 171, 209, 0.8),rgb(190, 190, 226),rgb(201, 201, 238),rgb(235, 235, 235),rgba(205, 205, 241, 0.7),rgb(154, 154, 207));  
+  padding-bottom: 2%;
+  border-bottom: 5px dotted black;
+  background: linear-gradient(rgba(255,255,255,.999), rgba(255,255,255,.9)), url("/rcs/binary-code.svg");
+}
+.res-header{
+  color:rgb(224, 47, 47);
+  font-size: 1.5rem;
+  letter-spacing: .8rem;
+  border-bottom: 2px solid;
+  width: 9rem;
+  margin-top: 5rem;
+  margin-left: 5rem;
 }
 .abt-cont{
-  padding: 5% 0%;
+  padding: 2% 0% 5% 0%;
   width: 80%;
   margin: auto;
   display: flex;
@@ -88,7 +102,6 @@ display: none;
   display: flex;
   flex-direction: column;
 }
-
 .projects-header,.service-header{
   color: rgb(224, 47, 47);
   font-size: 1.5rem;
@@ -112,7 +125,6 @@ display: none;
   flex-direction: row-reverse;
   padding-bottom: 5%;
 }
-
 .proj-txt{
    width: 60%;
 }
@@ -290,8 +302,9 @@ display: none;
     color:rgb(255, 58, 58);
     transition: 0.1s;
   }
-  .resume{
-    background-image: linear-gradient(to bottom right,rgba(171, 171, 209, 0.8),rgb(190, 190, 226),rgb(201, 201, 238),rgb(235, 235, 235),rgba(205, 205, 241, 0.7),rgb(154, 154, 207));  
+  .res-header{
+    margin-top: 5%;
+    margin-left: 2%;
   }
   .abt-cont{
     width: 90%;
@@ -307,6 +320,7 @@ display: none;
     font-size: 1rem;
     padding: 2% 0% 2% 3%;
     border: 1px dotted black;
+    letter-spacing: .1rem;
   }
   .abt-hdr{
   padding: 0px 0px 15px 0px;
@@ -324,18 +338,24 @@ display: none;
   .abt-pic{
     display: flex;
     flex-direction: column;
+    margin-left: 0px;
   }
   .pic{
     display: none;
   }
   .dl-resume{
     display: flex;
-    margin-top: 10px;
+    margin-top: 20px;
     background: transparent;
-    border:2px solid blue;
+    border:2px solid black;
     padding: 10px 30px;
-    color: blue;
+    color: black;
     justify-content: center;
+  }
+  .dl-resume:hover,.dl-resume:focus{
+    background: black;
+    color: white;
+    transition: .1s;
   }
   .abt-cont{
     display: flex;
