@@ -16,9 +16,9 @@
     <header>
         <ul class="navlinks">
             <a class="navlink flink" href="#">About ME</a>
-            <a class="navlink" href="#">Projects</a>
-            <a class="navlink" href="#">Services</a>
-            <a class="navlink" id="contact" href="#">Contact ME</a>
+            <a class="navlink" href="#projects">Projects</a>
+            <a class="navlink" href="#service">Services</a>
+            <a class="navlink" id="contact" href="#knowme">Contact ME</a>
         </ul>
     </header>
     <main>
@@ -42,13 +42,13 @@
                         </ul>
                     </div>
                 </div>
-                <div class="abt-pic" >
+                <div class="abt-pic">
                     <img class="pic" onclick="throwresume()" src="/rcs/reume01.jpg" alt="resume">
-                    <button  class="dl-resume" onclick="throwresume()">Resume</button>
+                    <button class="dl-resume" onclick="throwresume()">Resume</button>
                 </div>
             </div>
         </section>
-        <section class="projects">
+        <section id="projects" class="projects">
             <div class="projects-cont">
                 <div class="projects-header">
                     <h1>My<br>Projects</h1>
@@ -73,7 +73,7 @@
                                         <div class="desc-btns">
                                             <button class="git"><img class="git-btn-logo"
                                                     src="rcs/gitlogo.png">Repo</button>
-                                            <button class="pro-contact">Mail Me</button>
+                                            <button class="pro-contact" onclick="window.location.href='mailto:thejadeemperror@gmail.com?cc=maestrobharath@gmail.com'">Mail Me</button>
                                         </div>
                                     </div>
                                 </div>
@@ -104,7 +104,7 @@
                                             <div class="desc-btns">
                                                 <button class="git"><img class="git-btn-logo"
                                                         src="rcs/gitlogo.png">Repo</button>
-                                                <button class="pro-contact">Mail Me</button>
+                                                <button class="pro-contact" onclick="window.location.href='mailto:thejadeemperror@gmail.com?cc=maestrobharath@gmail.com'">Mail Me</button>
                                             </div>
                                         </div>
 
@@ -138,7 +138,7 @@
                                                 <div class="desc-btns">
                                                     <button class="git"><img class="git-btn-logo"
                                                             src="rcs/gitlogo.png">Repo</button>
-                                                    <button class="pro-contact">Mail Me</button>
+                                                    <button class="pro-contact" onclick="window.location.href='mailto:thejadeemperror@gmail.com?cc=maestrobharath@gmail.com'">Mail Me</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -169,7 +169,7 @@
                                                     <div class="desc-btns">
                                                         <button class="git"><img class="git-btn-logo"
                                                                 src="rcs/gitlogo.png">Repo</button>
-                                                        <button class="pro-contact">Mail Me</button>
+                                                        <button class="pro-contact" onclick="window.location.href='mailto:thejadeemperror@gmail.com?cc=maestrobharath@gmail.com'">Mail Me</button>
                                                     </div>
                                                 </div>
 
@@ -182,7 +182,7 @@
                                 </div>
                             </div>
         </section>
-        <section class="service">
+        <section id="service" class="service">
             <div class="service-cont">
                 <div class="service-header">
                     <h1 class="service-h1">Services</h1>
@@ -221,7 +221,7 @@
                 </div>
             </div>
         </section>
-        <section class="knowme-sec">
+        <section id="knowme" class="knowme-sec">
             <div class="knowme">
                 <div class="knowme-cont">
                     <div class="knowme-header">
@@ -229,11 +229,16 @@
                     </div>
                 </div>
                 <div class="knowme-icons">
-                    <img src="rcs/instagram.svg" alt="" class="socialicons" onclick="window.location.href='https://www.instagram.com/jade_emperror/'">
-                    <img src="rcs/whatsapp.svg" alt="" class="socialicons" onclick="window.location.href='https://api.whatsapp.com/send?phone=916382397798&text=hi'">
-                    <img src="rcs/linkedin.svg" alt="" class="socialicons" onclick="window.location.href='https://www.linkedin.com/in/bharat-kumar-6b194b169/'">
-                    <img src="rcs/gitlogo120px.png" alt="" class="socialicons" onclick="window.location.href='https://github.com/jade-emperror'">
-                    <img src="rcs/twitterlogo.svg" alt="" class="socialicons" onclick="window.location.href='https://twitter.com/jade_emperror'">
+                    <img src="rcs/instagram.svg" alt="" class="socialicons"
+                        onclick="window.location.href='https://www.instagram.com/jade_emperror/'">
+                    <img src="rcs/whatsapp.svg" alt="" class="socialicons"
+                        onclick="window.location.href='https://api.whatsapp.com/send?phone=916382397798&text=hi'">
+                    <img src="rcs/linkedin.svg" alt="" class="socialicons"
+                        onclick="window.location.href='https://www.linkedin.com/in/bharat-kumar-6b194b169/'">
+                    <img src="rcs/gitlogo120px.png" alt="" class="socialicons"
+                        onclick="window.location.href='https://github.com/jade-emperror'">
+                    <img src="rcs/twitterlogo.svg" alt="" class="socialicons"
+                        onclick="window.location.href='https://twitter.com/jade_emperror'">
                 </div>
             </div>
         </section>
