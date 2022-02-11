@@ -5,3 +5,7 @@ function openau(){
     var win = window.open("https://coe1.annauniv.edu/home/", '_blank');
     win.focus();
 }
+function navtourl(url){
+    var win = window.open(url, '_blank');
+    win.focus();
+}
